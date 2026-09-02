@@ -20,3 +20,4 @@ Si guardáramos esta matriz de forma tradicional (por ejemplo, en texto plano o 
 ### Instrucciones de Uso
 1. **Creación:** Ejecute `python generar_matriz.py` para construir el archivo optimizado en disco (`matriz_gigante.bin.gz`).
 2. **Verificación ("Mostrar"):** Ejecute `python verificar_matriz.py` para visualizar y demostrar que el contenido ha sido almacenado de manera correcta.
+3.  matriz_gigante.bin.gz es el archivo resultante de la ejecución del archivo
