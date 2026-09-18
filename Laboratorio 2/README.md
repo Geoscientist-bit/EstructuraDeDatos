@@ -1,4 +1,4 @@
-# Árbol de Merkle en Python
+# Árbol de Merkle
 
 Implementación de un Árbol de Merkle con SHA-256, prueba de inclusión y verificación.
 
@@ -11,7 +11,7 @@ Implementación de un Árbol de Merkle con SHA-256, prueba de inclusión y verif
 
 ## Requisitos y ejecución
 
-Solo usa la librería estándar (`hashlib`). Python 3.8+.
+Solo usa la librería estándar (`hashlib`). 
 
 ```bash
 python merkle_tree.py
@@ -101,13 +101,20 @@ Resultado: ✅ **La verificación falla** (comportamiento esperado).
 
 ## Capturas de pantalla
 
-- Verificación válida: `capturas/verificacion_valida.png`
-- Verificación inválida: `capturas/verificacion_invalida.png`
+<img width="807" height="532" alt="resultado1" src="https://github.com/user-attachments/assets/e59ba29f-8bc2-479f-9936-c0f7685bca77" />
+
+<img width="815" height="512" alt="resultado2" src="https://github.com/user-attachments/assets/a815b1e9-9898-411a-b808-6dc018128dc3" />
+ 
+<img width="785" height="302" alt="resultado3" src="https://github.com/user-attachments/assets/d7be466d-5110-4470-9e7f-e998bc726009" />
+
+ <img width="792" height="157" alt="resultado4" src="https://github.com/user-attachments/assets/9f8a5158-420b-4b4a-b44d-3e48cc0c907d" />
+
 
 ## Notas
 
 - Se concatenan los hashes en **hexadecimal** (texto). Bitcoin real concatena los
-  bytes crudos y aplica doble SHA-256; aquí se sigue la especificación del ejercicio.
+  bytes crudos y aplica doble SHA-256; 
 - Duplicar el último nodo permite que dos listas de transacciones distintas
   (p. ej. `[a, b, c]` y `[a, b, c, c]`) generen la misma raíz (CVE-2012-2459 en Bitcoin).
   Es una limitación conocida de esta regla, requerida por el enunciado.
+- Se usó la IA para generar la estructura del readme y para complementar el código que se tenía de la construcción del árbol de Merkle. De igual manera se utilizo para profundizar en el tema y de esa forma encontrar opciones para optimizar el código. 
